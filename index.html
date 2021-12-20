@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="tvApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Dagur dagskrá</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" /> <!--Link to the Bootstrap cdn-->
+    <link href="/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <span class="orange">n</span><span class="blue">TV</span>
+                </a>
+            </div>
+            
+            <ul class="nav navbar-nav">
+                <li><a href="#/">Heim</a></li>
+                <li><a href="#/tv/ruv">Rúv</a></li>
+                <li><a href="#/tv/ruvIthrottir">Rúv Íþróttir</a></li>
+                <li><a href="#/tv/stod2">Stöð 2</a></li>
+                <li><a href="#/tv/stod2sport">Stöð 2 Sport</a></li>
+                <li><a href="#/tv/stod2sport2">Stöð 2 Sport 2</a></li>
+                <li><a href="#/tv/stod2gull">Stöð 2 Gull</a></li>
+                <li><a href="#/tv/stod2bio">Stöð 2 Bíó</a></li>
+                <li><a href="#/tv/stod3">Stöð 3</a></li>
+                <li><a href="#/tv/skjar1">Skjár Einn</a></li>
+            </ul>
+            
+        </div>
+    </nav>
+    <!-- Navigation End -->
+
+    <!-- Main site -->
+    <div ng-view>
+
+    </div>
+    <!-- Main site End -->
+
+    <!-- Bootstrap dependencies jQuery is needed if you want to use bootstraps javascript widgets -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+    <!-- Angular dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0/angular.min.js"></script>
+    <script src="https://code.angularjs.org/1.5.0/angular-route.min.js"></script>
+
+    <!-- Angular App -->
+    <script src="js/app.js"></script>
+    <script src="js/routes.js"></script>
+    <script src="js/controllers/home-controller.js"></script>
+    <script src="js/controllers/ruv-controller.js"></script>
+    <script src="js/controllers/ruvIthrottir-controller.js"></script>
+    <script src="js/controllers/stod2-controller.js"></script>
+    <script src="js/controllers/stod2sport-controller.js"></script>
+    <script src="js/controllers/stod2sport2-controller.js"></script>
+    <script src="js/controllers/stod2gull-controller.js"></script>
+    <script src="js/controllers/stod2bio-controller.js"></script>
+    <script src="js/controllers/stod3-controller.js"></script>
+    <script src="js/controllers/skjar1-controller.js"></script>
+
+</body>
+</html>

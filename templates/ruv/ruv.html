@@ -1,0 +1,29 @@
+﻿<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+        </div>
+        <div class="col-md-10"> 
+            <table class="table table-striped">
+                <tr>
+                    <th>Tími</th>
+                    <th>Titill</th>
+                    <th>Lengd</th>
+                    <th>Sería/þáttur</th>
+                </tr>
+                <tr ng-repeat="r in ruvGuide" ng-click="selectShow(r.description)">
+                    <td>{{r.startTime}}</td>
+                    <td>{{r.title}}</td>
+                    <td>{{r.duration}}</td>
+                    <td>{{r.series["episode"]}} / {{r.series["series"]}}</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-2">{{full}}</div>
+    </div>
+</div>
+
+
+
+
+
+
